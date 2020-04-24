@@ -3,6 +3,7 @@ package khoanguyen.com.oop;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Animal meo = new Animal();
+        Animal meo = new Animal("con heo",2);
+//        meo.name = "con meo";
+//        meo.weight = 2;
+        Log.d("BBB",meo.info());
     }
 }
